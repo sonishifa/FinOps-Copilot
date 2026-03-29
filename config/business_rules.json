@@ -1,0 +1,78 @@
+{
+  "_comment": "Enterprise business rules for Verification Agent and Execution Agent",
+
+  "human_approval_threshold_usd": 2000,
+
+  "max_verification_retries": 3,
+
+  "sla_breach_escalation_hours": 72,
+
+  "vendor_consolidation_rules": {
+    "min_duplicate_similarity_score": 0.80,
+    "max_auto_consolidate_contract_value_usd": 50000,
+    "prohibited_categories": ["legal", "audit", "compliance"]
+  },
+
+  "cloud_spend_rules": {
+    "spike_threshold_pct": 30,
+    "auto_resize_max_savings_usd": 2000,
+    "require_approval_for_termination": true
+  },
+
+  "sla_rules": {
+    "critical_priority_response_hours": 1,
+    "high_priority_response_hours": 4,
+    "medium_priority_response_hours": 8,
+    "low_priority_response_hours": 24,
+    "penalty_per_breach_usd": 1500,
+    "breach_trend_window_days": 30,
+    "breach_rate_alert_threshold_pct": 10
+  },
+
+  "shadow_it_rules": {
+    "unused_days_threshold": 30,
+    "auto_tag_threshold_days": 7,
+    "require_approval_for_deletion": true
+  },
+
+  "procurement_rules": {
+    "max_single_vendor_spend_pct": 40,
+    "duplicate_detection_fields": ["supplier", "commodity_category", "contract_description"],
+    "contract_review_threshold_usd": 100000,
+    "defect_rate_alert_threshold_pct": 10
+  },
+
+  "token_budget": {
+    "_comment": "Rough per-call token caps to stay within Groq 500K/day free limit",
+    "max_evidence_chars_per_call": 2000,
+    "max_context_chars_per_call": 1500,
+    "warn_at_daily_tokens": 400000
+  },
+
+  "notification_channels": {
+    "auto_action": "audit_log",
+    "human_required": "manager_email",
+    "critical": ["manager_email", "slack", "audit_log"]
+  },
+
+  "pricing_rules": {
+    "overpay_threshold_pct": 15,
+    "preferred_regions": ["us-east-1", "ap-south-1"]
+  },
+
+  "fraud_rules": {
+    "chunk_size": 50000,
+    "balance_drain_threshold_pct": 90,
+    "zero_dest_balance_flag": true,
+    "min_flaggable_amount_usd": 10000,
+    "high_risk_transaction_types": ["TRANSFER", "CASH_OUT"]
+  },
+
+  "invoice_rules": {
+    "ocr_sample_size": 200,
+    "expected_tax_rates": {"CA": 15, "US": 0, "ZA": 15, "UK": 20, "IN": 18},
+    "tax_tolerance_pct": 2,
+    "max_payment_terms_days": 60,
+    "math_tolerance_usd": 0.05
+  }
+}
