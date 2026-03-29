@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-29T16:57:51.977719+00:00", "run_id": "RUN-F2EE25C6AFFF", "agent": "main", "event_type": "pipeline_start", "severity": "info", "anomaly_id": null, "action_id": null, "payload": {"run_id": "RUN-F2EE25C6AFFF"}}
+{"timestamp": "2026-03-29T16:57:51.978015+00:00", "run_id": "RUN-F2EE25C6AFFF", "agent": "ingestion_agent", "event_type": "agent_start", "severity": "info", "anomaly_id": null, "action_id": null, "payload": {}}

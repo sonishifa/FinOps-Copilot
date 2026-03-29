@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-29T00:15:42.200678", "run_id": "DEBUG", "agent": "ingestion_agent", "event_type": "agent_start", "severity": "info", "anomaly_id": null, "action_id": null, "payload": {}}
+{"timestamp": "2026-03-29T00:15:42.202292", "run_id": "DEBUG", "agent": "ingestion_agent", "event_type": "load_error", "severity": "error", "anomaly_id": null, "action_id": null, "payload": {"error": "Missing column provided to 'parse_dates': 'delivery_date, order_date'"}}
