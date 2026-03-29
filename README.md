@@ -1,6 +1,8 @@
-# FinOps Copilot — Agentic Cost Intelligence Engine
+# <p align="center">
+  <img src="logo.png" alt="FinOps Copilot" width="120" />
+</p>
 
-An autonomous, multi-agent AI system that monitors enterprise operations data, detects cost anomalies, diagnoses root causes through self-correcting LLM loops, and executes corrective actions — end to end.
+# FinOps Copilot — Agentic Cost Intelligence Engine
 
 > **Not a dashboard. Not a report generator.** FinOps Copilot detects anomalies, diagnoses root causes (with LLM self-critique), recommends actions, executes approved changes, and persists the entire audit trail to Supabase — closing the full autonomous loop.
 
