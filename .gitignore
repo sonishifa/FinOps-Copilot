@@ -1,0 +1,21 @@
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Large data files (use seed.py to populate Supabase)
+data/fraud-detection-paysim.csv
+data/fraud-detection2.csv
+
+# Audit logs (generated at runtime)
+audit/logs/*.log
+audit/logs/*.json
+audit/escalations/
+
+# OS
+.DS_Store
