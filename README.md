@@ -1,8 +1,8 @@
-# <p align="center">
+<p align="center">
   <img src="logo.png" alt="FinOps Copilot" width="120" />
 </p>
 
-  # FinOps Copilot — Agentic Cost Intelligence Engine
+# FinOps Copilot — Agentic Cost Intelligence Engine
 
 > **Not a dashboard. Not a report generator.** FinOps Copilot detects anomalies, diagnoses root causes (with LLM self-critique), recommends actions, executes approved changes, and persists the entire audit trail to Supabase — closing the full autonomous loop.
 
